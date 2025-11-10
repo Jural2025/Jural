@@ -6,74 +6,59 @@
   <style>
     body {
       font-family: sans-serif;
-      background-color: #f5f5f5;
+      background: #f5f5f5;
       color: #333;
-      text-align: center;
-      margin-top: 3em;
+      margin: 3em auto;
+      max-width: 600px;
+      line-height: 1.6;
     }
     h1 {
+      text-align: center;
+      color: #0078d7;
       margin-bottom: 1em;
     }
-    .tool {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
       background: #fff;
-      display: inline-block;
-      text-align: left;
-      padding: 1.5em 2em;
-      margin: 1em;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      width: 320px;
-      vertical-align: top;
-    }
-    .tool h2 {
-      margin-top: 0;
-      color: #0078d7;
-    }
-    .btn {
-      display: inline-block;
-      background-color: #0078d7;
-      color: white;
-      padding: 10px 20px;
+      margin: 0.5em 0;
+      padding: 1em;
       border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    a {
       text-decoration: none;
+      color: #0078d7;
       font-weight: bold;
-      transition: background-color 0.2s;
     }
-    .btn:hover {
-      background-color: #005fa3;
+    a:hover {
+      text-decoration: underline;
     }
-    .sha256 {
-      font-size: 10px;
-      color: #666;
-      margin-top: 0.5em;
-      word-break: break-all;
+    .footer {
+      text-align: center;
+      font-size: 11px;
+      color: #777;
+      margin-top: 3em;
     }
   </style>
 </head>
 <body>
+
   <h1>Jural Utilities</h1>
-  <p>Small Windows console tools developed with ChatGPT.</p>
 
-  <div class="tool">
-    <h2>Find_Bin_Frag</h2>
-    <p>Searches for a binary fragment inside a binary file.</p>
-    <a class="btn" href="https://github.com/Jural2025/Jural/releases/download/v2025_11_10/Find_Bin_Frag.7z">
-      Download (7z)
-    </a>
-    <p class="sha256">
-      SHA256: <code>af4c884e9a31b8452a5719bbae4d5ad24d54464fd8e827e193d50de2812cf5e7</code>
-    </p>
-  </div>
+  <p>Small console tools created with ChatGPT for binary data analysis and system work.</p>
 
-  <div class="tool">
-    <h2>HexCompare</h2>
-    <p>Compares two binary files and shows differing byte positions.</p>
-    <a class="btn" href="https://github.com/Jural2025/Jural/releases/download/v2025_11_10/HexCompare.7z">
-      Download (7z)
-    </a>
-    <p class="sha256">
-      SHA256: <code>------------------------------</code>
-    </p>
+  <ul>
+    <li><a href="Find_Bin_Frag.html">Find_Bin_Frag</a> — search for binary fragments in files</li>
+    <!-- пример для будущих программ -->
+    <li><a href="HexCompare.html">HexCompare</a> — compare two binary files</li>
+    <li><a href="DiskCopy.html">DiskCopy</a> — block-level copy utility</li>
+  </ul>
+
+  <div class="footer">
+    © 2025 Jural — GitHub Pages
   </div>
 
 </body>
