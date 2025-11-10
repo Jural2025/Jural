@@ -48,11 +48,22 @@
     SHA256: <code>af4c884e9a31b8452a5719bbae4d5ad24d54464fd8e827e193d50de2812cf5e7</code>
   </p>
 
-  <!-- Visitor counter -->
+  <!-- Text-only visitor counter -->
   <p class="counter">
-    Visits: 
-    <img style="height:14px; vertical-align:middle;" 
-         src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2FJural2025.github.io%2FJural&count_bg=%23737373&title_bg=%23555555&icon=&icon_color=%23FFFFFF&title=Visits&edge_flat=false"/>
+    Visits: <span id="visit-count">?</span>
   </p>
+
+  <script>
+  fetch('https://visitor-badge.laobi.icu/badge?page_id=Jural2025.Jural')
+    .then(response => response.text())
+    .then(text => {
+      const match = text.match(/<text[^>]*>(\d+)<\/text>/);
+      document.getElementById('visit-count').textContent = match ? match[1] : '?';
+    })
+    .catch(err => {
+      document.getElementById('visit-count').textContent = '?';
+      console.error('Visitor count fetch error:', err);
+    });
+  </script>
 </body>
 </html>
