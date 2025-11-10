@@ -2,21 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Find_Bin_Frag Utility</title>
+  <title>Jural Utilities</title>
   <style>
     body {
       font-family: sans-serif;
       background-color: #f5f5f5;
       color: #333;
       text-align: center;
-      margin-top: 5em;
+      margin-top: 3em;
+    }
+    h1 {
+      margin-bottom: 1em;
+    }
+    .tool {
+      background: #fff;
+      display: inline-block;
+      text-align: left;
+      padding: 1.5em 2em;
+      margin: 1em;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 320px;
+      vertical-align: top;
+    }
+    .tool h2 {
+      margin-top: 0;
+      color: #0078d7;
     }
     .btn {
       display: inline-block;
       background-color: #0078d7;
       color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
+      padding: 10px 20px;
+      border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.2s;
@@ -28,43 +46,35 @@
       font-size: 10px;
       color: #666;
       margin-top: 0.5em;
-    }
-    .counter {
-      font-size: 10px;
-      color: #666;
-      margin-top: 2em;
+      word-break: break-all;
     }
   </style>
 </head>
 <body>
-  <h1>Find_Bin_Frag</h1>
-  <p>A console utility to search for binary fragments in files.</p>
+  <h1>Jural Utilities</h1>
+  <p>Small Windows console tools developed with ChatGPT.</p>
 
-  <a class="btn" href="https://github.com/Jural2025/Jural/releases/download/v2025_11_10/Find_Bin_Frag.7z">
-    Download Find_Bin_Frag (7z)
-  </a>
+  <div class="tool">
+    <h2>Find_Bin_Frag</h2>
+    <p>Searches for a binary fragment inside a binary file.</p>
+    <a class="btn" href="https://github.com/Jural2025/Jural/releases/download/v2025_11_10/Find_Bin_Frag.7z">
+      Download (7z)
+    </a>
+    <p class="sha256">
+      SHA256: <code>af4c884e9a31b8452a5719bbae4d5ad24d54464fd8e827e193d50de2812cf5e7</code>
+    </p>
+  </div>
 
-  <p class="sha256">
-    SHA256: <code>af4c884e9a31b8452a5719bbae4d5ad24d54464fd8e827e193d50de2812cf5e7</code>
-  </p>
-
-  <!-- Text-only visitor counter -->
-<p class="counter">
-  Visits: <span id="visit-count">?</span>
-</p>
-
-<script>
-fetch('https://visitor-badge.laobi.icu/badge?page_id=Jural2025.Jural.github.io/Jural')
-  .then(response => response.text())
-  .then(text => {
-    const match = text.match(/<text[^>]*>(\d+)<\/text>/);
-    document.getElementById('visit-count').textContent = match ? match[1] : '?';
-  })
-  .catch(err => {
-    document.getElementById('visit-count').textContent = '?';
-    console.error('Visitor count fetch error:', err);
-  });
-</script>
+  <div class="tool">
+    <h2>HexCompare</h2>
+    <p>Compares two binary files and shows differing byte positions.</p>
+    <a class="btn" href="https://github.com/Jural2025/Jural/releases/download/v2025_11_10/HexCompare.7z">
+      Download (7z)
+    </a>
+    <p class="sha256">
+      SHA256: <code>------------------------------</code>
+    </p>
+  </div>
 
 </body>
 </html>
