@@ -49,21 +49,22 @@
   </p>
 
   <!-- Text-only visitor counter -->
-  <p class="counter">
-    Visits: <span id="visit-count">?</span>
-  </p>
+<p class="counter">
+  Visits: <span id="visit-count">?</span>
+</p>
 
-  <script>
-  fetch('https://visitor-badge.laobi.icu/badge?page_id=Jural2025.Jural')
-    .then(response => response.text())
-    .then(text => {
-      const match = text.match(/<text[^>]*>(\d+)<\/text>/);
-      document.getElementById('visit-count').textContent = match ? match[1] : '?';
-    })
-    .catch(err => {
-      document.getElementById('visit-count').textContent = '?';
-      console.error('Visitor count fetch error:', err);
-    });
-  </script>
+<script>
+fetch('https://visitor-badge.laobi.icu/badge?page_id=Jural2025.Jural.github.io/Jural')
+  .then(response => response.text())
+  .then(text => {
+    const match = text.match(/<text[^>]*>(\d+)<\/text>/);
+    document.getElementById('visit-count').textContent = match ? match[1] : '?';
+  })
+  .catch(err => {
+    document.getElementById('visit-count').textContent = '?';
+    console.error('Visitor count fetch error:', err);
+  });
+</script>
+
 </body>
 </html>
