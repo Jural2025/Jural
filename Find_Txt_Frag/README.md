@@ -1,4 +1,4 @@
-                               Find_Txt_Frag
+#                               Find_Txt_Frag
 
 Search for a specified text fragment inside a large text file.  
 The search operates at the **byte level**, without relying on any encoding (UTF-8, ANSI, KOI8-R, etc.).  
